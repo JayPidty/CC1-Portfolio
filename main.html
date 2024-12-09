@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MagalongPortfolioCC2</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>  
+    <div class="row">
+        <div id="header" class="header">
+            <h2 style="font-family: Roboto;">Ralvin Jay Magalong</h2>
+            <div class="navbar">
+                <a href="#aboutme" style="font-family: Source Sans Pro;">About Me</a>
+                <a href="#skills" style="font-family: Source Sans Pro;">My Skills</a>
+                <a href="#projects" style="font-family: Source Sans Pro;">Professional Highlights</a>
+                <a href="#contacts" style="font-family: Source Sans Pro;">Contact Me</a>
+            </div>
+            <h1>Hello There!</h1>
+            <p style="font-size: 20px; font-family: Source Sans Pro;">I am Ralvin Jay Magalong</p>
+            <p style="font-size: 30px; font-family: Source Sans Pro;">I specialize in Software Engineering, Cybersecurity, Game Development, and Web
+                Development</p>
+            <img src="TopDesignPhoto.png" style="width: 80%;">
+        </div>
+        <div class="headerphoto">
+            <img class="topimg" src="TopImage.jpg" alt="Image Failed to Load">
+        </div>
+    </div>
+
+
+
+    <div class="row" style="gap: 10%; padding-top: 10%; padding-bottom: 15%; background-color: #FDFDFD;">
+        <div id="aboutme" class="section">
+            <h2 style="color: #FFFFFF; font-family: Roboto;">About Me</h2>
+            <div class="content" id="aboutme-content">
+                <p style="text-indent: 4%; color: #F1F1F1; font-family: Source Sans Pro;">A skilled professional specializing in Software Engineering, Cybersecurity, Game Development, 
+                    Web Development, and Robotics. </p>
+            </br>
+        <p style="text-indent: 4%; color: #F1F1F1; font-family: Source Sans Pro;">I specialize in programming languages like Java, Python, and C++, with a deep understanding of data
+            structures, algorithms, and version control systems. I combine creativity and technical expertise to deliver
+            innovative solutions. I like to make and paint figures and use them in table-top-games in my spare time. I personally enjoy 
+            Warhammer 40k and Dungeons and Dragons.</p>
+            </div>
+            <button class="expand-btn" data-target="aboutme-content">Expand</button>
+        </div>
+        
+        <div id="skills" class="section">
+            <h2 style="color: #FFFFFF; font-family: Roboto;">Skills</h2>
+            <div class="content" id="skills-content">
+                <p style="color: #F1F1F1; font-family: Source Sans Pro;">As a skilled professional I have my own particular set of skills that you might want to see.</p>
+            </br>
+        </br>
+                <ul style="font-family: Source Sans Pro;">
+                    <p style="color: #F1F1F1;">Skillset: </p>
+                    <li style="color: #F1F1F1;">Programming (Java, Python): Building software applications.</li>
+                    <li style="color: #F1F1F1;">Data Structures & Algorithms: Efficient data organization.</li>
+                    <li style="color: #F1F1F1;">Web Development: HTML, CSS, JavaScript.</li>
+                    <li style="color: #F1F1F1;">Game Development: Unity, basic 3D modeling.</li>
+                    <li style="color: #F1F1F1;">Cybersecurity: Network security, risk management.</li>
+                </ul>
+            </br>
+            </div>
+            <button class="expand-btn" data-target="skills-content">Expand</button>
+        </div>
+    </div>
+<div style="background-color: #D9E5E5; padding-top: 20%; padding-bottom: 10%;">
+    <div id="projects" class="main-container">
+        <!-- Main Title -->
+        <div class="main-title" style="font-family: Roboto;">Professional Highlights</div>
+
+        <!-- Scrollable Container -->
+        <div class="scroll-container">
+            <!-- Mini Containers -->
+            <div class="mini-container">
+                <div class="mini-title" style="font-family: Roboto;">Work at Accenture</div>
+                <div class="mini-content">
+                    <img src="Accenture-Emblem.png" style="width: 100%; padding-bottom: 30px;" alt="Image Failed to Load">
+                    <p class="short-description"><strong> Engineer and Lead Quality Assurance Project Manager </strong></p>
+                    <p class="full-description" style="font-family: Source Sans Pro;">
+                        As the Lead Quality Assurance Project Manager at Accenture, I spearheaded QA efforts and successfully reduced 
+                        process times by 50%. I led initiatives to improve software efficiency across the company, resulting in a 20% 
+                        faster and more efficient system. My leadership in project management and continuous improvement played a key role 
+                        in streamlining operations and enhancing overall performance.
+                    </p>
+                    <button class="expand-button" onclick="toggleExpand(this)">More</button>
+                </div>
+            </div>
+            <div class="mini-container">
+                <div class="mini-title" style="font-family: Roboto;">Work at Aperture Science</div>
+                <div class="mini-content">
+                    <img src="Aperture_Science_Innovators_Vertical.png" style="width: 60%; padding-bottom: 25spx;" alt="Image Failed to Load">
+                    <p class="short-description"><strong>Worked as a Tech Intern</strong></p>
+                    <p class="full-description" style="font-family: Source Sans Pro;">
+                        As a Tech Intern at Aperture Science, I identified bugs and issues affecting tech systems, providing critical solutions.
+                         My contributions led to system improvements that continue to have a lasting impact today.
+                    </p>
+                    <button class="expand-button" onclick="toggleExpand(this)">More</button>
+                </div>
+            </div>
+            <div class="mini-container">
+                <div class="mini-title" style="font-family: Roboto;"> Detection Device for the Blind
+                    </div>
+                <div class="mini-content">
+                    <img src="ARDUINO PROJECT.jpg" alt="Image Failed to Load">
+                    <p class="short-description"><strong>Detection Warning Device to Aid 
+                        Navigation for the Visually Disabled Persons, Capstone
+                    </strong></p>
+                    <p class="full-description" style="font-family: Source Sans Pro;">
+                        This is Capstone presents a Detection Warning Device for the visually impaired, using high-frequency sound waves to
+                        improve obstacle detection. Testing shows high accuracy and user preference for white canes. The research highlights 
+                        the need for continued development, user feedback, and collaboration to enhance navigation aids for the visually impaired.
+                    </p>
+                    <button class="expand-button" onclick="toggleExpand(this)">More</button>
+                </div>
+            </div>
+            <div class="mini-container">
+                <div class="mini-title" style="font-family: Roboto;">Mech Mayhem</div>
+                <div class="mini-content">
+                    <img src="Sumo Bot Champion.jpg" style="width: 100%; padding-bottom: 8px;" alt="Image Failed to Load">
+                    <p class="short-description"><strong>Champion in Baguio SumoBot Competition</br>(2024)</strong></p>
+                    <p class="full-description" style="font-family: Source Sans Pro;">
+                        The Sumobot event held at Siglat Center on May 11th was a testament to collaboration and innovation, 
+                        thanks to the partnership with 𝗦𝗜𝗚𝗟𝗔𝗧 - Baguio Youth Innovation Hub. This collaboration brought together 
+                        the brightest minds and aspiring engineers, creating an atmosphere ripe for creativity and competition.
+                    </p>
+                    <button class="expand-button" onclick="toggleExpand(this)">More</button>
+                </div>
+            </div>
+            <div class="mini-container">
+                <div class="mini-title" style="font-family: Roboto;">Google Devfest</div>
+                <div class="mini-content">
+                    <img src="DevFest.JPG" style="width: 100%; padding-bottom: 30px;" alt="Image Failed to Load">
+                    <p class="short-description"><strong>Completed Google Devfest as a participant</br>(2024)</strong></p>
+                    <p class="full-description" style="font-family: Source Sans Pro;">
+                        Google DevFest is a community-driven event organized by Google Developer Groups (GDGs) worldwide. 
+                        It brings together developers, entrepreneurs, and tech enthusiasts to learn about the latest trends in 
+                        technology, including cloud computing, machine learning, web development, and mobile development, through
+                        workshops, talks, and networking opportunities.
+                    </p>
+                    <button class="expand-button" onclick="toggleExpand(this)">More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-buttons">
+        <button class="custom-bottom-button" onclick="openNewWindow('https://www.warhammer.com/en-GB/home')">
+            My Hobbies
+        </button>
+        <button class="custom-bottom-button"
+            onclick="openNewWindow('https://drive.google.com/file/d/1Zp6KcDqp6JG1oGoduxpOO5iIbmsFM_mr/view?usp=sharing')">
+            My Resume
+        </button>
+    </div>
+</div>
+    <div id="contacts" class="footer">
+        <div class="footer-left">
+            <img src="axanar-alecpeters-axamonitor.gif" style="width: 100%;" alt="Image not loaded">
+        </div>
+        <div class="footer-right">
+            <p style="font-size: 50px; font-family: Source Sans Pro;">Contacts:</p>
+        <p>Business Email:  magalongralvinjay@gmail.com</p> 
+        </br><p>Phone Number:  09694204444</p> 
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+</body>
+</html>
