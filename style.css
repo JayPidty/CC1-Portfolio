@@ -1,0 +1,461 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+    -ms-flex: 65%;
+    /* IE10 */
+    flex: 65%;
+    padding: 40px;
+    text-align: center;
+    background: #dfedf6;
+    color: #34495E;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+    font-size: 40px;
+}
+
+.header h2 {
+    font-size: 40px;
+    text-align: left;
+    position: relative;
+    left: 0px;
+}
+
+/* Photo for header */
+.headerphoto {
+    -ms-flex: 35%;
+    /* IE10 */
+    flex: 35%;
+
+    background: #011638;
+    color: white;
+}
+
+
+/* Style the top navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #2C3E50;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+    background-color: #53677b;
+    color: white;
+}
+
+/* Column container */
+.row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+    background-color: #FDFDFD;
+}
+
+.aboutme {
+    border-style: solid;
+    border-color: #FDFDFD;
+    border-top: 8%;
+    border-bottom: 8%;
+    -ms-flex: 50%;
+    /* IE10 */
+    flex: 50%;
+    background-color: #E8C1C5;
+    padding: 20px;
+    color: white;
+}
+
+.aboutme h2 {
+
+    background-color: #E8C1C5;
+    /* Darker color for the header */
+    font-size: 1.5em;
+    /* Font size for header */
+    padding: 8px 30px;
+    /* Inner spacing */
+    border-top-left-radius: 10px;
+    /* Rounded top corners */
+    border-top-right-radius: 10px;
+    margin: 0;
+    /* Remove margin between header and content */
+    width: 33%;
+    /* Set the width to where the red line ends */
+    overflow: hidden;
+    /* Hide any text beyond this width */
+
+}
+
+.aboutme h5 {
+    background-color: #E8C1C5;
+    /* Slightly different shade for content */
+    font-size: 13px;
+    color: #34495E;
+    /* Text color */
+    padding: 10px 20px;
+    /* Inner spacing */
+    border-top-right-radius: 10px;
+    /* Rounded bottom corners */
+    margin: 0;
+    /* Remove margin */
+}
+
+.aboutme h6 {
+    background-color: darkgray;
+    /* Slightly different shade for content */
+    font-size: 13px;
+    color: #34495E;
+    /* Text color */
+    padding: 10px 20px;
+    /* Inner spacing */
+    border-bottom-left-radius: 10px;
+    /* Rounded bottom corners */
+    border-bottom-right-radius: 10px;
+    margin: 0;
+    /* Remove margin */
+}
+
+
+
+/* Main column */
+.skills {
+    border-style: solid;
+    border-color: #E8C1C5;
+    border-top: 8%;
+    border-bottom: 8%;
+    -ms-flex: 50%;
+    /* IE10 */
+    flex: 50%;
+    background-color: #E8C1C5;
+    padding: 20px;
+}
+
+.skills h2 {
+    background-color: gray;
+    /* Darker color for the header */
+    color: #34495E;
+    /* Text color */
+    font-size: 1.5em;
+    /* Font size for header */
+    padding: 8px 30px;
+    /* Inner spacing */
+    border-top-left-radius: 10px;
+    /* Rounded top corners */
+    border-top-right-radius: 10px;
+    margin: 0;
+    /* Remove margin between header and content */
+    width: 15%;
+    /* Set the width to where the red line ends */
+    overflow: hidden;
+    /* Hide any text beyond this width */
+}
+
+.skills h5 {
+    background-color: darkgray;
+    /* Slightly different shade for content */
+    font-size: 13px;
+    color: white;
+    /* Text color */
+    padding: 10px 20px;
+    /* Inner spacing */
+    border-top-right-radius: 10px;
+    /* Rounded bottom corners */
+    margin: 0;
+    /* Remove margin */
+}
+
+.skills h6 {
+    background-color: darkgray;
+    /* Slightly different shade for content */
+    font-size: 13px;
+    color: white;
+    /* Text color */
+    padding: 10px 20px;
+    /* Inner spacing */
+    border-bottom-left-radius: 10px;
+    /* Rounded bottom corners */
+    border-bottom-right-radius: 10px;
+    margin: 0;
+    /* Remove margin */
+}
+
+.section {
+    position: relative; /* Ensure buttons are positioned relative to the box */
+    margin-bottom: 20px;
+    background-color: #3A8D99;
+    border-radius: 10px;
+    padding: 15px;
+    width: 30%; /* Adjust based on layout */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    left: 12%;
+    
+}
+
+/* Content Box Styling */
+.content {
+    max-height: 100px; /* Collapsed height */
+    overflow: hidden;
+    transition: max-height 0.5s ease; /* Smooth expand/collapse */
+}
+
+/* Expanded State */
+.content.expanded {
+    max-height: 600px; /* Fully expanded height */
+}
+
+/* Expand Button Styling */
+.expand-btn {
+    position: absolute; /* Attach button to the bottom-right */
+    bottom: 15px;
+    right: 15px;
+    padding: 8px 16px;
+    font-size: 0.9em;
+    color: white;
+    background-color: #3498DB;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.expand-btn:hover {
+    background-color: #72afd8;
+}
+
+.main-container {
+    margin-bottom: 8%;
+    width: 90%;
+    background-color: #E8E8E8 ;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+    left: 5%;
+    padding: 20px;
+}
+
+/* Main Title */
+.main-title {
+    background-color: #1F4F5C ;
+    color: white;
+    font-size: 1.5em;
+    text-align: center; 
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 10px;
+}
+
+/* Scrollable Container */
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 10px;
+    scroll-behavior: smooth;
+}
+
+/* Mini Container */
+.mini-container {
+    background-color: #FFFFFF ;
+    border-radius: 10px;    
+    padding: 15px;
+    width: 300px;
+    flex-shrink: 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: height 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    position: relative;
+    height: 350px;
+    /* Default height */
+}
+
+/* Expanded State */
+.mini-container.expanded {
+    height: 600px;
+    /* Expanded height */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Short Description */
+.short-description {
+    margin: 10px 0;
+}
+
+/* Full Description */
+.full-description {
+    display: none;
+    margin: 10px 0;
+    padding-top: 10px;
+}
+
+/* Show Full Description When Expanded */
+.mini-container.expanded .full-description {
+    display: block;
+}
+
+/* Expand Button */
+.expand-button {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #3498DB;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.expand-button:hover {
+    background-color: #72afd8;
+}
+
+/* Mini Container Title */
+.mini-title {
+    background-color: #1F4F5C ;
+    color: white;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* Mini Content */
+.mini-content img {
+    width: 40%;
+    border-radius: 5px;
+}
+
+.mini-content p {
+    margin: 10px 0 0;
+}
+
+.topimg {
+    background-color: #aaa;
+    width: 100%;
+    
+}
+
+.bottom-buttons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Style for the buttons */
+.custom-bottom-button {
+    padding: 20px 50px;
+    margin: 20px;
+    background-color: #3498DB; /* Default background color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Hover effect for buttons */
+.custom-bottom-button:hover {
+    background-color: #72afd8; /* Slightly darker shade on hover */
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow wrapping when space is tight */
+}
+
+.footer-left,
+.footer-right {
+    flex: 1 1 40%;
+    /* Flex-grow, flex-shrink, and flex-basis */
+    background-color: #2C3E50;
+    color: #ECF0F1;
+
+}
+
+.footer-left {
+    flex: 10%;
+}
+
+.footer-right {
+    text-align: justify;
+    padding-left: 5%;
+}
+
+@media (max-width: 600px) {
+
+    .footer-left,
+    .footer-right {
+        text-align: center;
+        /* Center-align text when stacked */
+    }
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .aboutme, .skills {
+        max-width: 400px;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .aboutme h2 {
+        float: none;
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .skills h2 {
+        float: none;
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .expand-btn {
+        float: none;
+        width: 50%;
+    }
+}
